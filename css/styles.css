@@ -92,6 +92,10 @@ article {
   flex-basis: 50%;
 }
 
+article p{
+  line-height: 2;
+}
+
 picture {
   margin: 3rem 0 0 0;
   flex-basis: 45%;
