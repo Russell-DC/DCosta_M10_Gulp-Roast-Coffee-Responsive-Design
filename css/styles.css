@@ -89,12 +89,12 @@ nav a:hover {
 }
 
 article {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 picture {
   margin: 3rem 0 0 0;
-  flex-basis: 35%;
+  flex-basis: 45%;
   align-content: center;
 }
 
