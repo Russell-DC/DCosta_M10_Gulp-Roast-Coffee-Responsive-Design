@@ -17,6 +17,10 @@ h1 {
   margin-bottom: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* make images flexible */
 img {
   max-width: 100%;
@@ -255,7 +259,6 @@ footer a {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
 }
 
-
 .quote {
   flex-basis: 100%;
   text-align: center;
@@ -291,7 +294,7 @@ footer a {
 }
 
 .Bannercontent {
-  flex-basis: 40%;
+  flex-basis: 50%;
   padding: 5%;
   font-size: larger;
   background-color: #f2f2f2;
@@ -343,6 +346,11 @@ footer a {
   nav ul {
     justify-content: center;
   }
+  
+  .text br{
+    display: none;
+  }
+
 }
 
 /*----------------Samsung Galaxy Tab S4----------------*/
@@ -411,6 +419,10 @@ footer a {
   .Bannercontent {
     flex-basis: 100%;
   }
+  
+  .text br{
+    display: none;
+  }
 
 }
 
@@ -477,5 +489,9 @@ footer a {
 
   .quote br {
     display: none;
+  }
+  .text{
+  font-size:small;
+  line-height: 20px;
   }
 }
