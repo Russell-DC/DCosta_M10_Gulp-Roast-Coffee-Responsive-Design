@@ -42,7 +42,7 @@ nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 }
 
 nav li {
@@ -92,7 +92,7 @@ article {
   flex-basis: 50%;
 }
 
-article p{
+article p {
   line-height: 2;
 }
 
@@ -183,6 +183,8 @@ footer a {
 
 .beans {
   grid-area: beans;
+  padding: 5%;
+  border-radius: 8px;
 }
 
 .triple-img {
@@ -193,6 +195,8 @@ footer a {
 
 .triple {
   grid-area: triple;
+  padding: 5%;
+  border-radius: 8px;
 }
 
 .light-img {
@@ -203,10 +207,13 @@ footer a {
 
 .light {
   grid-area: light;
+  padding: 5%;
+  border-radius: 8px;
 }
+
 /*----------------Contact Page----------------*/
 .contact {
-  flex-basis: 60%;
+  flex-basis: 50%;
   align-content: center;
 }
 
@@ -216,13 +223,106 @@ footer a {
 
 .contactImage {
   margin: 3rem 0 0 0;
-  flex-basis: 35%;
+  flex-basis: 45%;
   align-content: center;
 }
 
-@media only screen and (max-width:1200px) {
+/*----------------Home Page----------------*/
+
+.photo-container {
+  display: block;
+  position: relative;
+  float: right;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.z {
+  display: block;
+  width: 1200px;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.text {
+  position: relative;
+  font-size: larger;
+  font-weight: 400;
+  top: 87%;
+  color: #f2f2f2;
+  height: 50px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+}
+
+
+.quote {
+  flex-basis: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #d98555;
+  font-weight: 400;
+}
+
+.CTAbanner {
+  margin-top: -70px;
+}
+
+.CTAbanner__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.Bannerimage {
+  flex-basis: 50%;
+  width: 50%;
+  float: left;
+  object-fit: cover;
+  text-align: center;
+}
+
+.Bannercontent {
+  flex-basis: 40%;
+  padding: 5%;
+  font-size: larger;
+}
+
+.CTA {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.CTA:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+.homeLogo {
+  flex-basis: 36%;
+  margin-top: 30px;
+  object-fit: contain;
+  text-align: center;
+}
+
+
+@media only screen and (min-width:1200px) {
   article {
-    flex-basis: 73%;
+    flex-basis: 70%;
   }
 
   picture {
@@ -233,10 +333,12 @@ footer a {
     color: #f2f2f2;
     padding: 0.5rem;
   }
+
   nav .logo {
     flex-basis: 60%;
     text-align: left;
   }
+
   nav ul {
     justify-content: center;
   }
@@ -247,6 +349,10 @@ footer a {
 @media only screen and (min-width: 413px) and (max-width: 1200px) {
   article {
     flex-basis: 65%;
+  }
+
+  nav ul {
+    justify-content: center;
   }
 
   picture {
@@ -274,6 +380,14 @@ footer a {
       "light-img light";
   }
 
+  .contact{
+    flex-basis: 50%;
+  }
+
+  .contactImage{
+    flex-basis: 50%;
+  }
+
   .gridArea img {
     border-radius: 10px;
   }
@@ -282,6 +396,21 @@ footer a {
     flex-basis: 100%;
     text-align: center;
   }
+
+  .quote br {
+    display: none;
+  }
+
+  .Bannerimage {
+    flex-basis: 100%;
+    height: 24rem;
+    object-fit: cover;
+  }
+
+  .Bannercontent {
+    flex-basis: 100%;
+  }
+
 }
 
 /*----------------Pixel 7----------------*/
@@ -298,6 +427,7 @@ footer a {
   nav ul {
     padding-left: 25%;
     padding-right: 25%;
+    justify-content: center;
   }
 
   nav .logo img {
@@ -325,11 +455,26 @@ footer a {
   }
 
   .contactImage {
+    margin: 0;
     flex-basis: 100%;
-    object-fit: cover;
-    height: 200px;
+    object-fit: contain;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     align-content: center;
+  }
+
+  .Bannerimage {
+    flex-basis: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .Bannercontent {
+    flex-basis: 100%;
+  }
+
+  .quote br {
+    display: none;
   }
 }
